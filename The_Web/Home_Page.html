@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page </title>
+        <style>
+            
+            *{
+                box-sizing: flex;
+                margin: 0;
+                padding: 0;
+                
+               
+                
+            }
+
+            img {
+                border-radius: 20px;
+                border: #12b8d9 solid;
+                margin-left: 10%;
+                display: flex;
+                justify-content: center;
+            }
+            html{
+                font-size: 10px;
+            }
+            header{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px;
+            }
+            .logo{
+                color: #db15b4;
+                text-transform: uppercase;
+                letter-spacing: 20px;
+                font-size: 30px;
+                border-left-style:double;
+            }
+            nav{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                flex-wrap: wrap;
+                
+            }
+            .header_contact {
+                
+                background-color: rgba(128, 0, 128, 0.665);
+                color: #000000;
+                font-size: 23px;
+                text-decoration: none;
+                border-radius: 90px;
+                border: solid black;
+                margin: 8px;
+                padding: 13px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                justify-content: center;
+                
+            }
+            .a {
+                background-color: purple;
+                color: #000000;
+                font-size: 23px;
+                text-decoration: none;
+                border-radius: 90px;
+                
+                margin: 8px;
+                padding: 13px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                justify-content: center;
+                
+            }
+            .h3{
+                background-color: rgba(220, 155, 155, 0.563);
+                margin: 0;
+                padding: 0;
+                max-width: 80%;
+                text-align: center;
+                align-items: center;
+                align-content: center;
+                margin: auto;
+                
+                border-radius: 30px;
+                border: solid black;
+                border: 2px;
+
+            }
+            .p{
+                background-color: rgba(220, 155, 155, 0.563);
+                margin: 0;
+                padding: 0;
+                max-width: 80%;
+                text-align: center;
+                align-items: center;
+                align-content: center;
+                margin: auto;
+                border-radius: 30px;
+                border: solid black;
+                border: 1px;
+                
+            }
+            body{
+                background-image: url(photo.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 5px solid;
+                border-color: #db15b4;
+                font-family: sans-serif;
+                font-size: 15px;
+                height: 100%;
+                background-repeat: no-repeat;
+                
+                
+            }
+            .para{
+                border: #000000 solid;
+                border-radius: 20px;
+                background-color: #db15b4;
+                border-radius: 20px;
+            }
+            .footer{
+                display: flex;
+                flex-wrap: wrap;
+                
+                padding-block: 50px;
+                
+                color: db15b4;
+                margin-bottom: 1px;
+            }
+            .footer-container{
+                max-width: 70%;
+                margin: auto;
+            }
+            .footer-title{
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                margin-bottom: 20px;
+            }
+            .footer-list{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                max-width: fit-content;
+                margin-right: 25px;
+                flex-wrap: wrap;
+                padding-bottom: -10px;
+                
+            }
+            .footer-top {
+                background-color: #c32162;
+                border: solid;
+                border-radius: 20px;
+                width: 100%;
+                padding-left: 10%;
+                align-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding-bottom: 4%;
+            }
+            
+            
+            .footer-list-item{
+                
+                color:#db15b4;
+                font-size: 20px;
+                text-decoration: none;
+                border-radius: 10px;
+                margin: 4px;
+                padding: 8px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .flex-contact {
+                margin-top: 10%;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                ;
+
+            }
+            .contact {
+                background-color:  #c32162(18, 6, 159);
+                
+                text-align: center;
+                margin: 15px;
+                padding: 50px;
+                width: auto;
+                margin: 30px;
+                font-size: 30px;
+
+            }
+            .wd-40 {
+                width: 30%;
+            }
+           
+       
+
+            td,th{
+                border: #000000 solid;
+                background-color: aliceblue;
+            }
+            h2,p {
+                height: auto;
+                width: auto;
+                
+                text-align: center;
+                
+            }
+            .footer-bottom {
+                align-content: center;
+                align-items: center;
+                
+
+            }
+            .main-contact {
+                margin-top: 10%;
+                
+                border: 1px;
+                border: #c32162;
+                
+                text-align: center;
+                
+            }
+
+            .Iphone {
+                display: block;
+                flex-direction: column;
+                display: block;
+                width: 60%;
+                padding-left: 10%;
+                margin-top: 10%;
+                text-align: center;
+            }
+            .Galaxy {
+                display: block;
+                flex-direction: column;
+                display: block;
+                width: 60%;
+                padding-left: 10%;
+                margin-top: 10%;
+                text-align: center;
+            }
+            .Huawei {
+                display: block;
+                flex-direction: column;
+                display: block;
+                width: 60%;
+                padding-left: 10%;
+                margin-top: 10%;
+            }
+            .Oppo {
+                display: block;
+                flex-direction: column;
+                display: block;
+                width: 60%;
+                padding-left: 10%;
+                margin-top: 10%;
+            }
+            
+            
+            .line1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+            .line2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h4> guide company </h4>
+            </div>
+            <nav>
+                <a class="header_contact" href="Home_Page.html" >Home</a>
+                <a class="header_contact" href="Galaxy.html" style="background-color:#5d36f6b6
+                 ;">Galaxy</a>
+                <a class="header_contact" href="Huawei.html" style="background-color:#db770db6
+                ;">Huawei</a>
+                <a class="header_contact" href="Iphone.html"style="background-color: #00f414b6
+                 ;">Iphone</a>
+                <a class="header_contact" href="Oppo.html"style="background-color:#f2ff00b6
+                 ;">Oppo</a>
+                
+            </nav>
+        </header>
+
+        <div class="flex-contact">
+            <div class="para">
+                <h2> Who are we ?</h2>
+                <p> we are a guide company and our goal is to give you evey phones in one web to <br>
+                make it easy to search for new phones<br>
+                with less price as much as we can find ,to let peaple <br>
+                get the smart phones that they need or want</p>
+            </div>
+            </div>
+           
+
+            <div class="main-contact">
+                <div class="line1">
+                <div class="Iphone" ><a href="Iphone.html">
+                    <img src="Iphone.jpg" alt="Iphone" height="80%" width="75%"></a>
+
+                    <h3 class="h3" style="border: #000000 solid;">   Iphone <br> Iphone 14 with IOS System  </h3>
+                    
+                </div>
+                <div class="Galaxy"><a href="Galaxy.html">
+                    
+                    <img src="samsung-galaxy.jpeg" alt="Galaxy" height="80%" width="75%"></a>
+                    <h3 class="h3" style="border: #000000 solid;">Galaxy <br> Galaxy s23 with android System</h3>
+                    
+                
+                </div>
+                </div>
+                <div></div><br>
+                <div class="line2">
+                <div class="Huawei"><a href="Huawei.html">
+                    <img src="Huawei.jpg" alt="Huawei" height="80%" width="75%"></a>
+                    <h3 class="h3" style="border: #000000 solid;">Huawei <br> Huawei with android System</h3>
+                    
+                </div>
+                <div class="Oppo"><a href="Oppo.html">
+                    <img src="Oppo.jpeg" alt="Oppo" height="80%" width="75%"></a>
+                    <h3 class="h3" style="border: #000000 solid;">Oppo <br> Oppo with android system</h3>
+                    
+                
+                </div>
+                </div>
+            </div>
+            
+            
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-top">
+                        <div>
+                            <h6 class="footer-title"> Computer store </h6>
+                            <ul type="none" class="footer-list" >
+                                <li class="footer-list-item">
+                                    <a href="Home_Page.html" class="a">Back to home</a>
+                                </li>
+                                
+                                <li class="footer-list-item">
+                                    <a href="mailto:test@gmail.com" class="a">contact</a>
+                                </li>
+                            </ul>
+                            
+                            
+                        </div>
+                    </div> 
+                        <hr class="footer-divider">
+                        <div class="footer-bottom">
+                            <span class="copyright" style="color: white;">&copy 2023 web dev. all right reserved</span>
+                        </div>
+
+                </div>
+            </div>
+
+        </footer>
+        
+    </body>
+</html>

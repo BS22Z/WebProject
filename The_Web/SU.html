@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+
+            body {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                background-image: url(Iphones_Background.jpg) ;
+                background-position: 0px;
+                background-size: 100%;
+                font-family: "lato", sans-serif;
+            }
+            
+            .signup {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+
+            }
+            .form {
+                background-color: rgb(209, 58, 223);
+                border-radius: 52px 52px 113px 113px;
+                -moz-border-radius: 52px 52px 113px 113px;
+                -webkit-border-radius: 52px 52px 113px 113px;
+                border: 5px solid #000000;
+                width: 400px;
+                -webkit-box-shadow: 0px 0px 41px 14px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 41px 14px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 41px 14px rgba(0,0,0,0.75); 
+                padding: 20px 40px;
+                size: 60%;
+            }
+            .form-title {
+                font-size: 50px;
+                color: #000000;
+                text-align: center;
+            }
+            .input-container {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            .input {
+                height: 100%;
+                width: 100%;
+                border: 1px solid white;
+                border-radius: 7px;
+                font-size: 15px;
+                padding: 10px 20px;
+                margin-top: 10px;
+            }
+            .label {
+                color: aliceblue;
+                font-size: 16px;
+            }
+            .submitBtn {
+                display: flex;
+                margin: auto;
+                padding: 20px;
+                border: none;
+                background-color: #000000;
+                color: aliceblue;
+                border-radius: 6px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .submitBtn:hover {
+                background-color: rgb(31, 104, 104);
+            }
+
+        </style>
+
+    </head>
+    <body>
+     <div class="signup">
+        <form action="" class="form">
+            
+            <h1 class="form-title">Sign Up</h1>
+
+            <div class="input-container">
+                <label for="email" class="label">Email:</label>
+                <input type="text" class="input" placeholder="Enter your Email" name="email" required="registered">
+            </div>
+
+            <div class="input-container">
+                <label for="username" class="label">Username:</label>
+                <input type="text" class="input" placeholder="Enter your Username" name="username"  required="registered">
+            </div>
+
+            <div class="input-container">
+                <label for="password" class="label">password:</label>
+                <input type="password" class="input" placeholder="Enter your password" name="password"  required="registered">
+            </div>
+
+            <div class="input-container">
+                <label for="confirmpassword" class="label">Confirm password:</label>
+                <input type="password" class="input" placeholder="Confirm your password" name="confirmpassword"  required="registered">
+            </div>
+            
+            <a href="Home_Page.html">
+                <button name="btn" class="submitBtn" value="Sign up" formaction="Home_Page.html" onclick="registered();" >Click me</button> 
+            </a>
+            
+
+        </form>
+     </div>
+     <script type="text/javascript">
+        function registered() {
+            alert("you have been registered")
+
+        }
+        
+
+     </script>
+    </body>
+</html>
